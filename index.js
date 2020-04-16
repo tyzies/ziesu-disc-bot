@@ -12,5 +12,5 @@ bot.categories = fs.readdirSync("./commands/");
 ["command", "event"].forEach(handler => {
     require(`./handlers/${handler}`)(bot);
 });
-const token = require(`./token.json`)
+
 bot.login(process.env.BOT_TOKEN);
