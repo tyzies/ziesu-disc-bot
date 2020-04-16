@@ -13,4 +13,4 @@ bot.categories = fs.readdirSync("./commands/");
     require(`./handlers/${handler}`)(bot);
 });
 
-bot.login(process.env.BOT_TOKEN);
+bot.login(config.token);
