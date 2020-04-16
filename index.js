@@ -1,3 +1,4 @@
+require('dotenv').config()
 const Discord = require("discord.js");
 const fs = require("fs");
 const config = require('./config.json')
@@ -13,4 +14,4 @@ bot.categories = fs.readdirSync("./commands/");
     require(`./handlers/${handler}`)(bot);
 });
 const token = require(`./token.json`)
-bot.login(token.token);
+bot.login(process.env.BOT_TOKEN);
