@@ -56,7 +56,7 @@ module.exports = {
             message.channel.send(miscEmbed)
             return;
         }
-        else {
+        else if(!args[0]) {
             let hEmbed = new MessageEmbed()
             .setAuthor(bot.user.username, bot.user.displayAvatarURL())
             .setTitle("<:sanswink:699891393958641724>   Commands List")
@@ -70,6 +70,9 @@ module.exports = {
             .setColor("0x00b9fc")
             message.channel.send(hEmbed);
             return;
+        }
+        else {
+            message.channel.send("that help command list doesn't exist.");
         }
     }
 }
