@@ -11,7 +11,7 @@ module.exports = {
         let image = `https://s3.amazonaws.com/world.growtopiagame.com/${worldname}.png`;
         if(!worldname)
         return message.channel.send("what world do ya wanna render?");
-        if(image.size > 0)
+        if(image.size = 0)
         return message.channel.send("world doesn't exist/world owner didn't render the world.")
 
         let render = new MessageEmbed()
