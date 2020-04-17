@@ -4,6 +4,7 @@ module.exports = {
     name: 'render',
     description: 'growtopia world render',
     usage: 'render <world name>',
+    aliases: ["worldrender", "renderworld", "gtrender"],
     timeout: 4000,
 
     run: async (bot, message, args) => {
