@@ -12,7 +12,7 @@ module.exports = {
         let image = `https://s3.amazonaws.com/world.growtopiagame.com/${worldname}.png`;
         if (!worldname)
             return message.channel.send("what world do ya wanna render?");
-        if (message.attachments.size < 0)
+        if (message.attachments.size = 0)
             return message.channel.send("World doesn't exist/World owner didn't render the world yet.");
         if (args[1])
             return message.channel.send("woah slow down. no spaces please.");
