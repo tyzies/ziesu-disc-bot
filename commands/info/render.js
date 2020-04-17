@@ -12,18 +12,15 @@ module.exports = {
         if (!worldname)
             return message.channel.send("what world do ya wanna render?");
 
-        if (image) {
-            let render = new MessageEmbed()
-                .setTitle("Growtopia World Render")
-                .setDescription(`World Name: ${worldname.toUpperCase()}`)
-                .setImage(image)
-                .setColor("RANDOM")
-                .setFooter("Growtopia World Render")
-                .setTimestamp()
+        let render = new MessageEmbed()
+            .setTitle("Growtopia World Render")
+            .setDescription(`World Name: ${worldname.toUpperCase()}`)
+            .setImage(image)
+            .setColor("RANDOM")
+            .setFooter("Growtopia World Render")
+            .setTimestamp()
 
-            message.channel.send(render);
-        } else {
-            message.channel.send("world doesnt exist/isnt rendered by owner yet.");
-        }
+        message.channel.send(render);
+
     }
 }
