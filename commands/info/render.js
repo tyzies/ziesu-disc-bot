@@ -18,8 +18,8 @@ module.exports = {
             return message.channel.send("woah slow down. no spaces please.");
 
         let render = new MessageEmbed()
-            .setTitle("<a:lr:698779764823031819> Growtopia World Render")
-            .setDescription(`World Name: ${worldname.toUpperCase()}\nNo image = World doesn't exist/World owner didn't render the world yet.`)
+            .setTitle("Growtopia World Render")
+            .setDescription(`<a:lr:698779764823031819> World Name: ${worldname.toUpperCase()}\nNo image = World doesn't exist/World owner didn't render the world yet.`)
             .setImage(image)
             .setColor("RANDOM")
             .setFooter("Growtopia World Render")
