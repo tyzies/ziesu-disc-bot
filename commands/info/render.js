@@ -11,12 +11,12 @@ module.exports = {
         let image = `https://s3.amazonaws.com/world.growtopiagame.com/${worldname}.png`;
         if(!worldname)
         return message.channel.send("what world do ya wanna render?")
-        if(!image)
+        if(!message.attachments.first() ? !message.attachments.proxyURL : null)
         return message.channel.send("world render doesn't exist/world owner didn't render the world.");
 
         let render = new MessageEmbed()
         .setTitle("Growtopia World Render")
-        .setDescription(`World Name: ${worldname}`)
+        .setDescription(`World Name: ${worldname.toUpperCase()}`)
         .setImage(image)
         .setColor("RANDOM")
         .setFooter("Growtopia World Render")
