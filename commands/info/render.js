@@ -19,7 +19,7 @@ module.exports = {
 
         let render = new MessageEmbed()
             .setTitle("Growtopia World Render")
-            .setDescription(`<a:lr:698779764823031819> World Name: ${worldname.toUpperCase()}\nNo image = World doesn't exist/World owner didn't render the world yet.`)
+            .setDescription(`<a:lr:698779764823031819> World Name: ${worldname.toUpperCase()}\n<a:no:699881296515825664> No image = World doesn't exist/World owner didn't render the world yet.`)
             .setImage(image)
             .setColor("RANDOM")
             .setFooter("Growtopia World Render")
