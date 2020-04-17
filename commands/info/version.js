@@ -9,6 +9,7 @@ module.exports = {
     usage: 't.version',
     categories: 'information',
     timeout: 5000,
+    aliases: ["ver", "v", "updates", "changelogs", "changelog"],
 
     run: async (bot, message, args) => {
         let versionEmbed = new MessageEmbed()
