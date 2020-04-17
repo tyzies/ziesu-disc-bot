@@ -14,7 +14,7 @@ module.exports = {
     run: async (bot, message, args) => {
         let versionEmbed = new MessageEmbed()
             .setTitle(`${bot.username} Updates, Change Logs, Version.`)
-            .addDescription(`<a:lr:698779764823031819> Version: v${version}\nPrefix: \`${prefix}\`\n\n<a:lr:698779764823031819> **Updates/Change Logs:**\nNone.`)
+            .setDescription(`<a:lr:698779764823031819> Version: v${version}\nPrefix: \`${prefix}\`\n\n<a:lr:698779764823031819> **Updates/Change Logs:**\nNone.`)
             .setFooter(`${bot.username}`, bot.user.displayAvatarURL())
 
         message.channel.send(versionEmbed);
