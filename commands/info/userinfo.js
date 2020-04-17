@@ -71,11 +71,11 @@ module.exports = {
         }
 
         const embed = new MessageEmbed()
-            .setDescription(`<@${member.user.id}>`)
-            .setAuthor(`${member.user.tag}`, member.user.displayAvatarURL())
+            .setAuthor(`${member.user.username}`, member.user.displayAvatarURL())
             .setColor(randomColor)
             .setThumbnail(member.user.displayAvatarURL())
             .setTimestamp()
+            .addField("<a:lr:698779764823031819> **Username**", `${member.user.tag}`)
             .addField("<a:lr:698779764823031819> **Status**", `${status[member.user.presence.status]}`, true)
             .addField("<a:lr:698779764823031819> **ID**", `${member.id}`, true)
             .addField('<a:lr:698779764823031819> **Joined At**', `${moment(member.joinedAt).format("dddd, MMMM Do YYYY, HH:mm:ss")}`, true)
