@@ -10,22 +10,14 @@ module.exports = {
         
     run: async (bot, message, args) => {
         let percentage = Math.floor(Math.random() * 100);
-        let howgaypeople = message.mentions.users.first()
+        let howgaypeople = message.mentions.users.first() || message.author
+        if(howgaypeople.id === '296627878752419850') return message.channel.send("totally 0% gay");
 
-        if(howgaypeople) {
-            let howgaypeep = new MessageEmbed()
-            .setTitle('how gay r8 machine')
-            .setDescription(`${howgaypeople.username} is ${percentage}% gay :rainbow_flag:`)
-            .setColor("RANDOM")
+        let howgayembed = new MessageEmbed()
+        .setTitle("howgay r8 machine")
+        .setDescription(`you are ${percentage}% gay :rainbow_flag:`)
+        .setColor("RANDOM")
 
-            message.channel.send(howgaypeep)
-        } else {
-            let howgay = new MessageEmbed()
-            .setTitle('how gay r8 machine')
-            .setDescription(`${message.author.username} is ${percentage}% gay :rainbow_flag:`)
-            .setColor("RANDOM")
-
-            message.channel.send(howgay)
-        }
+        message.channel.send(howgayembed);
     }
 }
