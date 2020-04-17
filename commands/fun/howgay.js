@@ -15,7 +15,7 @@ module.exports = {
 
         let howgayembed = new MessageEmbed()
         .setTitle("howgay r8 machine")
-        .setDescription(`you are ${percentage}% gay :rainbow_flag:`)
+        .setDescription(`${howgaypeople.username} is ${percentage}% gay :rainbow_flag:`)
         .setColor("RANDOM")
 
         message.channel.send(howgayembed);
