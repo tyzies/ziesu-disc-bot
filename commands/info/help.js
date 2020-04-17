@@ -32,7 +32,7 @@ module.exports = {
         if(args[0] === 'info'){
             let iEmbed = new MessageEmbed()
             .setTitle('<a:BlobThink:657601443511140353>   Info Commands')
-            .setDescription("``help``, ``ping``, ``avatar``, ``invite``, ``serverinfo``, ``userinfo``, ``fortnite``, ``uptime``, ``corona``, ``render``")
+            .setDescription("``help``, ``ping``, ``avatar``, ``invite``, ``serverinfo``, ``userinfo``, ``fortnite``, ``uptime``, ``corona``, ``render``, ``version``")
             .setColor("RANDOM")
             .setFooter('made by tyzies#9020')
             message.channel.send(iEmbed);

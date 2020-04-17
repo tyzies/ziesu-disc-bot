@@ -13,7 +13,7 @@ module.exports = {
 
     run: async (bot, message, args) => {
         let versionEmbed = new MessageEmbed()
-            .setTitle(`${bot.user.username} Updates, Change Logs, Version.`)
+            .setTitle(`${bot.user.username} Updates, Change Logs, Version`)
             .setDescription(`<a:lr:698779764823031819> Version: v${version}\nPrefix: \`${prefix}\`\n\n<a:lr:698779764823031819> **Updates/Change Logs:**\nNone.`)
             .setFooter(`${bot.user.tag}`, bot.user.displayAvatarURL())
 
