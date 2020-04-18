@@ -20,13 +20,13 @@ module.exports = {
 
 		if (isNaN(amount)) {
 			return message.reply('that isn\'t a valid number, sir.');
-		} else if (amount <= 1 || amount > 1001) {
-			return message.reply('the limit is up to 1000 messages. put a number between 1 and 1000.');
+		} else if (amount <= 1 || amount > 1000) {
+			return message.reply('the limit is up to 999 messages. slow down bro');
 		}
 
 		message.channel.bulkDelete(amount, true).catch(err => {
 			console.error(err);
-			message.channel.send('there was an error trying to clear messages in this channel');
+			return message.channel.send('there was an error trying to clear messages in this channel');
         });
         
         message.channel.send(`cleared ${amount - 1} messages, yay.`).then(message =>{
