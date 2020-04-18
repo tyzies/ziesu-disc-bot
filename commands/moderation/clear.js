@@ -23,7 +23,7 @@ module.exports = {
 			message.channel.send('there was an error trying to clear messages in this channel');
         });
         
-        message.channel.send(`cleared ${amount} messages, yay.`).then(message =>{
+        message.channel.send(`cleared ${amount - 1} messages, yay.`).then(message =>{
             message.delete({ timeout: 5000 })
         });
     }
