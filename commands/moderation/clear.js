@@ -15,7 +15,7 @@ module.exports = {
         if(!args[0])
         return message.channel.send("how many messages do ya wanna delete?");
 
-        if(!message.member.hasPermission(["MANAGE_MESSAGES", "ADMINISTRATR"]))
+        if(!message.member.hasPermission(["MANAGE_MESSAGES", "ADMINISTRATOR"]))
         return message.channel.send("you dont have perms, sad.")
 
 		if (isNaN(amount)) {
