@@ -23,7 +23,7 @@ module.exports = {
         if(args[0] === 'moderation'){
             let mEmbed = new MessageEmbed()
             .setTitle("<a:siren:657601372195389461>   Moderation Commands")
-            .setDescription("``ban``, ``kick``, ``role <create, delete>``, ``unban``, ``snipe``, ``addrole``, ``removerole``")
+            .setDescription("``ban``, ``kick``, ``role <create, delete>``, ``unban``, ``snipe``, ``addrole``, ``removerole``, ``clear``")
             .setColor("RANDOM")
             .setFooter('made by tyzies#9020')
             message.channel.send(mEmbed);
