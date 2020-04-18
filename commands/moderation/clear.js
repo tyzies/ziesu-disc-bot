@@ -10,11 +10,21 @@ module.exports = {
         timeout: 5000,
     
     run: async (bot, message, args) => {
-        if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("you don't have permissions, dumbass.");
-        if (!args[0]) return message.reply("how many messages r u gonna delete");
-        if (args[0] > 1000) return message.reply("the limit is up to 1000 messages!").then(message => message.delete(5000));
-        message.channel.bulkDelete(args[0]).then(() => {
-            message.channel.send(`cleared ${args[0]} messages, yay.`);
-        })
+        const amount = parseInt(args[0]) + 1;
+
+		if (isNaN(amount)) {
+			return message.reply('that isn\'t a valid number, sir.');
+		} else if (amount <= 1 || amount > 1000) {
+			return message.reply('the limit is up to 1000 messages. put a number between 1 and 1000.');
+		}
+
+		message.channel.bulkDelete(amount, true).catch(err => {
+			console.error(err);
+			message.channel.send('there was an error trying to clear messages in this channel');
+        });
+        
+        message.channel.send(`cleared ${amount} messages, yay.`).then(message =>{
+            message.delete({ timeout: 5000 })
+        });
     }
 }
