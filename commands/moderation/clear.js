@@ -12,6 +12,9 @@ module.exports = {
     run: async (bot, message, args) => {
         const amount = parseInt(args[0]) + 1;
 
+        if(!args[0])
+        return message.channel.send("how many messages do ya wanna delete?");
+
 		if (isNaN(amount)) {
 			return message.reply('that isn\'t a valid number, sir.');
 		} else if (amount <= 1 || amount > 1000) {
