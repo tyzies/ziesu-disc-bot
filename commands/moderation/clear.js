@@ -20,8 +20,8 @@ module.exports = {
 
 		if (isNaN(amount)) {
 			return message.reply('that isn\'t a valid number, sir.');
-		} else if (amount <= 1 || amount > 1000) {
-			return message.reply('the limit is up to 999 messages. slow down bro');
+		} else if (amount <= 1 || amount > 100) {
+			return message.reply('the limit is up to 100 messages. slow down bro');
 		}
 
 		message.channel.bulkDelete(amount, true).catch(err => {
