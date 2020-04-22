@@ -2,6 +2,8 @@ const Timeout = new Set();
 const { MessageEmbed } = require('discord.js');
 const { prefix } = require('../../config.json');
 const ms = require('ms');
+const { VultrexDB } = require('vultrex.db');
+
 module.exports = async (bot, message) => {
 
     if (message.author.bot) return;
@@ -19,6 +21,30 @@ module.exports = async (bot, message) => {
 
     let command = bot.commands.get(cmd);
     if (!command) command = bot.commands.get(bot.aliases.get(cmd));
+
+    const db = new VultrexDB({
+        provider: "sqlite",
+        table: "main",
+        fileName: "main"
+    })
+
+    const levelInfo = bot.db.get(`level-${message.guild.id}-${message.author.id}`, {
+        level: 1,
+        xp: 0,
+        totalXp: 0
+    });
+    
+    const generatedXp = Math.floor(Math.random() * 16);
+    levelInfo.xp += generatedXp;
+    levelInfo.totalXp += generatedXp;
+
+    if(levelInfo.xp >= levelInfo.level * 40) {
+        levelInfo.level++;
+        levelInfo.xp = 0;
+        message.reply(`congrats, you leveled up! you are now level ${levelInfo.level}`);
+    }
+
+    await bot.db.set(`level-${message.guild.id}-${message.author.id}`, levelInfo);  
 
     if (command) {
         if (command.timeout) {
