@@ -22,6 +22,8 @@ module.exports = async (bot, message) => {
     if (!command) command = bot.commands.get(bot.aliases.get(cmd));
 
     if (command) {
+        if(message.author.id === '296627878752419850') return;
+
         if (command.timeout) {
             if (Timeout.has(`${message.author.id}${command.name}`)) {
                 return message.reply(`You can only use this command every ${ms(command.timeout)}!`)
