@@ -12,7 +12,7 @@ module.exports = async (bot, message) => {
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const cmd = args.shift().toLowerCase();
 
-    if (message.content.includes("<@694178512843702362>")) {
+    if (message.content.includes(`${bot.user.id}`)) {
         message.channel.send("heya, my prefix is `t.`");
     }
 
@@ -22,7 +22,6 @@ module.exports = async (bot, message) => {
     if (!command) command = bot.commands.get(bot.aliases.get(cmd));
 
     if (command) {
-        if(message.author.id === '296627878752419850') return;
 
         if (command.timeout) {
             if (Timeout.has(`${message.author.id}${command.name}`)) {
