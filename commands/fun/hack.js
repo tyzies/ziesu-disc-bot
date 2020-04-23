@@ -8,6 +8,8 @@ module.exports = {
     run: async (bot, message, args) =>{
         let users = message.mentions.users.first();
 
+        if(!users) return message.channel.send("who are we hacking?")
+
         let emails = [
             "mymomisgay@gmail.com",
             `${users.username}ispro@yahoo.com`,
@@ -36,8 +38,6 @@ module.exports = {
         let email = Math.floor(Math.random() * emails.length);
         let lastdm = Math.floor(Math.random() * lastDM.length);
         let password = Math.floor(Math.random() * passwords.length)
-
-        if(!users) return message.channel.send("who are we hacking?");
 
         let msg = await message.channel.send(`Hacking ${users.username} now...`)
         await sleep(1500)
