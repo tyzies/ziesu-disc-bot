@@ -5,10 +5,10 @@ module.exports = {
     timeout: 5000,
     aliases: ["hacked", "hek", "heck", "hacc"],
 
-    run: async (bot, message, args) =>{
+    run: async (bot, message, args) => {
         let users = message.mentions.users.first();
 
-        if(!users) return message.channel.send("who are we hacking?")
+        if (!users) return message.channel.send("who are we hacking?")
 
         let emails = [
             "mymomisgay@gmail.com",
@@ -39,34 +39,43 @@ module.exports = {
         let lastdm = Math.floor(Math.random() * lastDM.length);
         let password = Math.floor(Math.random() * passwords.length)
 
+        function sleep(milliseconds) {
+            var start = new Date().getTime();
+            for (var i = 0; i < 1e7; i++) {
+                if ((new Date().getTime() - start) > milliseconds) {
+                    break;
+                }
+            }
+        }
+
         let msg = await message.channel.send(`Hacking ${users.username} now...`)
-        await bot.sleep(1500)
+        await sleep(1500)
         await msg.edit("Finding **Discord** login....")
-        await bot.sleep(1700)
+        await sleep(1700)
         await msg.edit(`**Found!**\nEmail: \`${email}\`\nPassword: \`${password}\``)
-        await bot.sleep(1500)
+        await sleep(1500)
         await msg.edit("Fetching last DMs...")
-        await bot.sleep(1700)
+        await sleep(1700)
         await msg.edit(`Last DM: ${lastdm}`)
-        await bot.sleep(1500)
+        await sleep(1500)
         await msg.edit(`Injecting viruses into discriminator #${users.discriminator}`)
-        await bot.sleep(1300)
+        await sleep(1300)
         await msg.edit("Virus injected!")
-        await bot.sleep(1300)
+        await sleep(1300)
         await msg.edit(`Finding IP Address...`)
-        await bot.sleep(1700)
+        await sleep(1700)
         await msg.edit(`IP Address: 127.0.0.1`)
-        await bot.sleep(1300)
+        await sleep(1300)
         await msg.edit(`Hacking into their Instagram account..`)
-        await bot.sleep(1700)
+        await sleep(1700)
         await msg.edit("Instagram account hacked!")
-        await bot.sleep(1300)
+        await sleep(1300)
         await msg.edit("Posting inapoppriate posts into their Instagram account...")
-        await bot.sleep(1500)
+        await sleep(1500)
         await msg.edit("Sent post!")
-        await bot.sleep(1300)
+        await sleep(1300)
         await msg.edit("Leaking their data to Twitter...")
-        await bot.sleep(1300)
+        await sleep(1300)
         await msg.edit(`Finished hacking ${users.username}.`)
         return message.channel.send("the hack is complete.");
     }
