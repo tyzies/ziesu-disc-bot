@@ -10,9 +10,7 @@ module.exports = {
     run: async (bot, message, args) => {
         let sugChannel = message.mentions.channels.first();
         if (!sugChannel) return message.channel.send("include the channel please.")
-        if (sugChannel.id != '698162686474715197' &&
-            sugChannel.id != '699195924500578325' &&
-            sugChannel.id != '699483967056773150')
+        if (sugChannel.id != '698162686474715197')
             return message.channel.send("that's not the suggestion channel!");
 
         let suggestion = args.slice(1).join(" ");
