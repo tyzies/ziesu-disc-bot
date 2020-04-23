@@ -35,9 +35,9 @@ module.exports = {
             `sanslol43`
         ]
 
-        let email = Math.floor(Math.random() * emails.length);
-        let lastdm = Math.floor(Math.random() * lastDM.length);
-        let password = Math.floor(Math.random() * passwords.length)
+        let email = emails[Math.floor(Math.random() * emails.length)];
+        let lastdm = lastDM[Math.floor(Math.random() * lastDM.length)];
+        let password = passwords[Math.floor(Math.random() * passwords.length)];
 
         function sleep(milliseconds) {
             var start = new Date().getTime();
