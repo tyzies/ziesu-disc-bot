@@ -1,5 +1,5 @@
 module.exports = {
-  name: "test"
+  name: "test",
   
   run: async (bot, message, args) =>{
      let reason = args.join(" ")
