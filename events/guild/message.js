@@ -12,10 +12,6 @@ module.exports = async (bot, message) => {
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const cmd = args.shift().toLowerCase();
 
-    if (message.content.includes(`${bot.user.id}`)) {
-        message.channel.send("heya, my prefix is `t.`");
-    }
-
     if (cmd.length === 0) return;
 
     let command = bot.commands.get(cmd);
