@@ -13,7 +13,12 @@ module.exports = {
             'https://i.imgur.com/XOYzWBp.gif',
             'https://i.imgur.com/QDkZ3QK.gif',
             'https://i.imgur.com/mvDeiFR.gif',
-            'https://i.imgur.com/VvoB5Mv.gif'
+            'https://i.imgur.com/VvoB5Mv.gif',
+            'https://media.giphy.com/media/llmZp6fCVb4ju/giphy.gif',
+            'https://media.giphy.com/media/EvYHHSntaIl5m/giphy.gif',
+            'https://media.giphy.com/media/16bJmyPvRbCDu/giphy.gif',
+            'https://media.giphy.com/media/QbkL9WuorOlgI/giphy.gif',
+            'https://media.giphy.com/media/6uEE79cXjssla/giphy.gif'
         ];
 
         let hugs = hug[Math.floor(Math.random() * hug.length)];
