@@ -27,7 +27,8 @@ module.exports = {
             "yeah i agree i am gay",
             "your mom fat",
             "imagine having a big peepee like me lol",
-            "yo your boobs r sexy"
+            "yo your boobs r sexy",
+            "please dont check my hentai file"
         ]
 
         let passwords = [
