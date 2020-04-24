@@ -1,3 +1,5 @@
+const { sleep } = require('../../functions');
+
 module.exports = {
     name: 'hack',
     description: 'hacks a user',
@@ -39,15 +41,6 @@ module.exports = {
         let email = emails[Math.floor(Math.random() * emails.length)];
         let lastdm = lastDM[Math.floor(Math.random() * lastDM.length)];
         let password = passwords[Math.floor(Math.random() * passwords.length)];
-
-        function sleep(milliseconds) {
-            var start = new Date().getTime();
-            for (var i = 0; i < 1e7; i++) {
-                if ((new Date().getTime() - start) > milliseconds) {
-                    break;
-                }
-            }
-        }
 
         let msg = await message.channel.send(`Hacking ${users.username} now...`)
         await sleep(1500)
