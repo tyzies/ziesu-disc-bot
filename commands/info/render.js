@@ -17,6 +17,9 @@ module.exports = {
             body = JSON.parse(body)
         });
 
+        if (!worldname)
+            return message.channel.send("what world do ya wanna render?")
+
         if (args[1])
             return message.channel.send("woah slow down. no spaces please.");
         if (!body)
