@@ -13,7 +13,7 @@ module.exports = {
         let image = `https://s3.amazonaws.com/world.growtopiagame.com/${worldname}.png`;
 
         request(image, function(err, response, body){
-            console.log(image.png);
+            console.log(image.error);
         })
 
         if (!worldname)
