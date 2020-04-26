@@ -12,10 +12,6 @@ module.exports = {
         let worldname = args.join(" ").toLowerCase();
         let image = `https://s3.amazonaws.com/world.growtopiagame.com/${worldname}.png`;
 
-        request(image, function(err, response, body){
-            console.log(image(err));
-        })
-
         if (!worldname)
             return message.channel.send("what world do ya wanna render?");
         if (args[1])
