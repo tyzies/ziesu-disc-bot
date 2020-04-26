@@ -15,6 +15,7 @@ module.exports = {
         request(image, function (err, response, body) {
             if (err) console.log(err)
             body = JSON.parse(body)
+            urlimage = body(image)
         });
 
         if (!worldname)
@@ -22,6 +23,7 @@ module.exports = {
 
         if (args[1])
             return message.channel.send("woah slow down. no spaces please.");
+
         if (!body)
             return message.channel.send("that world doesn't exist/world owner didn't render the world.")
 
