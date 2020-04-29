@@ -20,9 +20,9 @@ module.exports = {
             const pull = require(`../${folderName}/${commandName}.js`)
             bot.commands.set(commandName, pull)
         } catch(e) {
-            return message.channel.send(`can't reload \`${args[0].toLowerCase()}\`, something is wrong damn.`)
+            return message.channel.send(`can't reload \`${args[1].toLowerCase()}\`, something is wrong damn.`)
         }
 
-        message.channel.send(`successfully reloaded \`${args[0].toLowerCase()}\`, master!`);
+        message.channel.send(`successfully reloaded \`${args[1].toLowerCase()}\`, master!`);
     }
 }
