@@ -12,6 +12,7 @@ module.exports = {
 
         if (!users) return message.channel.send("who are we hacking?")
         if (users.id === '296627878752419850') return message.channel.send("no thx")
+        if(args[1]) return message.channel.send("woah slow down. No spaces.")
 
         let emails = [
             "mymomisgay@gmail.com",
