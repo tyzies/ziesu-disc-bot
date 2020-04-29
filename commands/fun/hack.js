@@ -17,8 +17,8 @@ module.exports = {
 
         let emails = [
             "mymomisgay@gmail.com",
-            `${users.username}ispro@yahoo.com`,
-            `${users.username}cool1234@email.com`,
+            `${users ? users.username : args[0]}ispro@yahoo.com`,
+            `${users ? users.username : args[0]}cool1234@email.com`,
             "ilovediscord@gmail.com",
             `real${users.username}@gmail.com`
         ]
@@ -34,7 +34,7 @@ module.exports = {
         ]
 
         let passwords = [
-            `${users.username}1234pro`,
+            `${users ? users.username : args[0]}1234pro`,
             `ILoveDiscord402`,
             `animelover69`,
             `minecraftcool044`,
@@ -45,7 +45,7 @@ module.exports = {
         let lastdm = lastDM[Math.floor(Math.random() * lastDM.length)];
         let password = passwords[Math.floor(Math.random() * passwords.length)];
 
-        let msg = await message.channel.send(`Hacking ${users.username} now...`)
+        let msg = await message.channel.send(`Hacking ${users ? users.username : args[0]} now...`)
         await sleep(1500)
         await msg.edit("[<a:Loading:657499963823226890>] Finding **Discord** login....")
         await sleep(1700)
@@ -55,7 +55,7 @@ module.exports = {
         await sleep(1700)
         await msg.edit(`[<a:yes:699881212520562799>] Last DM: ${lastdm}`)
         await sleep(1500)
-        await msg.edit(`[<a:Loading:657499963823226890>] Injecting viruses into discriminator #${users.discriminator}`)
+        await msg.edit(`[<a:Loading:657499963823226890>] Injecting viruses into discriminator #${users ? users.discriminator : "6969"}`)
         await sleep(1300)
         await msg.edit("[<a:yes:699881212520562799>] Virus injected!")
         await sleep(1300)
@@ -75,7 +75,7 @@ module.exports = {
         await sleep(1300)
         await msg.edit("[<a:yes:699881212520562799>] Leaked their data to Twitter.")
         await sleep(1300)
-        await msg.edit(`Finished hacking ${users.username}.`)
+        await msg.edit(`Finished hacking ${users ? users.username : args[0]}.`)
         return message.channel.send("the hack is complete.");
     }
 }
