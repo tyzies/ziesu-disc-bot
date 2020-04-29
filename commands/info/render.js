@@ -11,7 +11,10 @@ module.exports = {
     run: async (bot, message, args) => {
         let worldname = args.join(" ").toLowerCase();
         let image = `https://s3.amazonaws.com/world.growtopiagame.com/${worldname}.png`;
-        
+
+        if (image.file)
+            return message.channel.send("f for u");
+
         if (!worldname)
             return message.channel.send("what world do ya wanna render?");
         if (args[1])
