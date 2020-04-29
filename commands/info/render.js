@@ -11,9 +11,7 @@ module.exports = {
     run: async (bot, message, args) => {
         let worldname = args.join(" ").toLowerCase();
         let image = `https://s3.amazonaws.com/world.growtopiagame.com/${worldname}.png`;
-
-        if(!image.file)
-        return message.channel.send("world owner didnt render the world/world dont exist.")
+        
         if (!worldname)
             return message.channel.send("what world do ya wanna render?");
         if (args[1])
