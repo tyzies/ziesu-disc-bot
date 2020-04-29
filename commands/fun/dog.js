@@ -19,10 +19,10 @@ module.exports = {
 
             let dogEmbed = new MessageEmbed()
             .setColor('RANDOM')
-            .setAuthor(`tyzies.exe Dogs`, message.guild.iconURL)
+            .setAuthor(`${bot.user.username}`, message.guild.iconURL)
             .setImage(body.message)
             .setTimestamp()
-            .setFooter("tyzies.exe", bot.user.displayAvatarURL)
+            .setFooter(`${bot.user.username}`, bot.user.displayAvatarURL)
             message.channel.send(dogEmbed);
 
         msg.delete();
