@@ -23,7 +23,7 @@ module.exports = {
             .addField("<a:lr:698779764823031819> **Today's Cases**", corona.todayCases, true)
             .addField("<a:lr:698779764823031819> **Today's Deaths**", corona.todayDeaths, true)
             .addField("<a:lr:698779764823031819> **Active Cases**", corona.active, true)
-            .addField("<important:536987777372258339> **Help Stop COVID-19!**", `[Preventing COVID-19](https://who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public)`, true)
+            .addField("<:important:536987777372258339> **Help Stop COVID-19!**", `[Preventing COVID-19](https://who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public)`, true)
             
            return message.channel.send(embed);
         } else {
@@ -40,7 +40,7 @@ module.exports = {
             .addField("<a:lr:698779764823031819> **Today's Cases**", corona.todayCases, true)
             .addField("<a:lr:698779764823031819> **Today's Deaths**", corona.todayDeaths, true)
             .addField("<a:lr:698779764823031819> **Active Cases**", corona.active, true)
-            .addField("<important:536987777372258339> **Help Stop COVID-19!**", `[Preventing COVID-19](https://who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public)`, true)
+            .addField("<:important:536987777372258339> **Help Stop COVID-19!**", `[Preventing COVID-19](https://who.int/emergencies/diseases/novel-coronavirus-2019/advice-for-public)`, true)
 
             return message.channel.send(embed);
         }
