@@ -6,7 +6,7 @@ module.exports = {
     name: 'corona',
     description: 'COVID-19 Information',
     timeout: 5000,
-    aliases: ["coronavirus", "covid19", "viruscorona"],
+    aliases: ["coronavirus", "covid19", "viruscorona", "covid"],
 
     run: async (bot, message, args) => {
 
