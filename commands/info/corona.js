@@ -14,7 +14,7 @@ module.exports = {
             let corona = await track.all()
 
             let embed = new MessageEmbed()
-            .setTitle("COVID19 Statistics")
+            .setTitle("COVID-19 Statistics")
             .setDescription("**Global**")
             .setColor(0xff0505)
             .setThumbnail("https://cdn.discordapp.com/attachments/239446877953720321/691020838379716698/unknown.png")
@@ -32,7 +32,7 @@ module.exports = {
             if(!corona.country) return message.channel.send("write the full name/country doesn't exist.")
 
             let embed = new MessageEmbed()
-            .setTitle(`COVID19 Statistics`)
+            .setTitle(`COVID-19 Statistics`)
             .setDescription(`${corona.country}`)
             .setColor(0xff0505)
             .setThumbnail("https://cdn.discordapp.com/attachments/239446877953720321/691020838379716698/unknown.png")
