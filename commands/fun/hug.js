@@ -1,5 +1,5 @@
 const { MessageEmbed } = require('discord.js');
-const { hug } = require('../../assets/array/hugurl.json');
+const { hug } = require('../../assets/arrays/hugurl.json');
 const { randomInArray } = require('../../functions');
 
 module.exports = {
