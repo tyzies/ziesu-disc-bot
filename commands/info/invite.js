@@ -14,5 +14,6 @@ module.exports = {
         .setColor(0x03fc17)
         .setTimestamp();
         message.author.send(inviteEmbed);
+        message.channel.send("Sent to your DMs.")
     }
 }
