@@ -14,7 +14,7 @@ module.exports = {
         if(args[0] === 'fun'){
             let fEmbed = new MessageEmbed()
             .setTitle("<a:PepeDance:657497966214512661>   Fun Commands")
-            .setDescription("``8ball``, ``meme``, ``say``, ``howgay``, ``penis``, ``hug``, ``hack``")
+            .setDescription("``8ball``, ``meme``, ``say``, ``howgay``, ``penis``, ``hug``, ``hack``, ``cat``, ``dog``")
             .setColor("RANDOM")
             .setFooter('made by tyzies#9020')
             message.channel.send(fEmbed);
