@@ -20,7 +20,7 @@ module.exports = {
 
 		if (isNaN(amount)) {
 			return message.reply('that isn\'t a valid number, sir.');
-		} else if (amount <= 1 || amount > 100) {
+		} else if (amount <= 1 || amount > 101) {
 			return message.reply('the limit is up to 100 messages. slow down bro');
 		}
 
