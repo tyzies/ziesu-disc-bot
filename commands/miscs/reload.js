@@ -8,7 +8,8 @@ module.exports = {
     run: async (bot, message, args) => {
         if(message.author.id != "296627878752419850") return message.reply("only my owner can reload commands. go away")
         
-        if(!args[0]) return message.reply("what command r u gonna update/reload?")
+        if(!args[0]) return message.reply("file name?")
+        if(!args[1]) return message.reply("command name?")
 
         let folderName = args[0].toLowerCase()
         let commandName = args[1].toLowerCase()
