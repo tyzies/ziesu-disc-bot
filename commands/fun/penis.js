@@ -16,7 +16,7 @@ module.exports = {
 
 
         let peepeeuser = new MessageEmbed()
-            .setTitle(`**peepee size machine**`)
+            .setTitle(`**peepees size machine**`)
             .setDescription(`${ppUser.username}'s penis\n` + penis[result])
             .setColor(0xff0000)
         message.channel.send(peepeeuser)
