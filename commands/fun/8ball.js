@@ -10,7 +10,7 @@ module.exports = {
 
     run: async (bot, message, args) => {
         let question = message.content.slice(bot.prefix.length + 6)
-        if (!question) return message.channel.send(`You did not specify your question!`)
+        if (!question) return message.channel.send(`what do you wanna ask?`)
         else {
             let responses = randomInArray(response)
 
