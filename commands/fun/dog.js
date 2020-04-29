@@ -19,7 +19,7 @@ module.exports = {
 
             let dogEmbed = new MessageEmbed()
             .setColor('RANDOM')
-            .setAuthor(`${bot.user.username}`, message.guild.iconURL)
+            .setAuthor(`${bot.user.username} Dogs`, message.guild.iconURL)
             .setImage(body.message)
             .setTimestamp()
             .setFooter(`${bot.user.username}`, bot.user.displayAvatarURL)
