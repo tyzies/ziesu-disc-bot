@@ -26,8 +26,8 @@ module.exports = {
 
 		message.channel.bulkDelete(amount, true).catch(err => {
 			console.error(err);
-			return message.channel.send('there was an error trying to clear messages in this channel');
-        });
+			return message.channel.send('some messages are older than 2 weeks old. Can\'t delete them.');
+        })
         
         message.channel.send(`cleared ${amount - 1} messages, yay.`).then(message =>{
             message.delete({ timeout: 5000 })
