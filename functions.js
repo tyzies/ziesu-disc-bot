@@ -6,5 +6,11 @@ module.exports = {
                 break;
             }
         }
+    },
+    randomInArray: function (anArray){
+        //TODO : Check if anArray is really an array.	
+    
+        var randomIndex=Math.floor(Math.random()*anArray.length)	
+        return anArray[randomIndex];
     }
 }
