@@ -20,7 +20,7 @@ module.exports = {
             message.channel.send(fEmbed);
             return;
         }
-        if(args[0] === 'moderation'){
+        if(args[0] === 'moderation' || args[0] === 'mods' || args[0] === 'mod'){
             let mEmbed = new MessageEmbed()
             .setTitle("<a:siren:657601372195389461>   Moderation Commands")
             .setDescription("``ban``, ``kick``, ``role <create, delete>``, ``unban``, ``snipe``, ``addrole``, ``removerole``, ``clear``")
@@ -29,7 +29,7 @@ module.exports = {
             message.channel.send(mEmbed);
             return;
         }
-        if(args[0] === 'info'){
+        if(args[0] === 'info' || args[0] === 'i'){
             let iEmbed = new MessageEmbed()
             .setTitle('<a:BlobThink:657601443511140353>   Info Commands')
             .setDescription("``help``, ``ping``, ``avatar``, ``invite``, ``serverinfo``, ``userinfo``, ``fortnite``, ``uptime``, ``corona``, ``render``, ``version``")
@@ -38,7 +38,7 @@ module.exports = {
             message.channel.send(iEmbed);
             return;
         } 
-        if (args[0] === 'text'){
+        if (args[0] === 'text' || args[0] === 'txt'){
             let tEmbed = new MessageEmbed()
             .setTitle('<a:owoO:657498056815673344><a:owoW:657498068882685952><a:owoO:657498056815673344>   Text Commands')
             .setDescription("``embed``, ``orangetext``, ``yellowtext``, ``greentext``, ``bluetext``")
