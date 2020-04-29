@@ -33,7 +33,7 @@ module.exports = {
 
             let embed = new MessageEmbed()
             .setTitle(`COVID-19 Statistics`)
-            .setDescription(`${corona.country}`)
+            .setDescription(`**${corona.country}**`)
             .setColor(0xff0505)
             .setThumbnail("https://cdn.discordapp.com/attachments/239446877953720321/691020838379716698/unknown.png")
             .addField('<a:lr:698779764823031819> **Total Cases**', corona.cases, true)
