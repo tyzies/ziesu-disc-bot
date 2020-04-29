@@ -12,6 +12,7 @@ module.exports = {
         let penis = ["8=D", "8==D", "8===D", "8====D", "8=====D", "8======D", "8=======D", "8========D", "8=========D", "8==========D"];
         let result = Math.floor((Math.random() * penis.length));
         let ppUser = message.mentions.users.first();
+        if(ppUser.id === '694178512843702362') return message.channel.send('sadly i dont even have one.')
 
         if (ppUser) {
             let peepeeuser = new MessageEmbed()
