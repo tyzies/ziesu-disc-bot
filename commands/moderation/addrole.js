@@ -7,7 +7,7 @@ module.exports = {
     run: async (bot, message, args) => {
         if (!message.member.permissions.has("MANAGE_ROLES", "MANAGE_MEMBERS", "ADMINISTRATOR", "MANAGE_SERVER")) return message.channel.send("you dont have permissions.");
         let member = message.mentions.members.first() || message.guild.members.cache.get(args[0]);
-        let role = message.mentions.roles.first() || message.guild.roles.cache.find(r => r.name.toLowerCase() === args);
+        let role = message.mentions.roles.first() || message.guild.roles.cache.find(r => r.name.toLowerCase() === args.slice(1).join(" "));
 
         if (!args[0]) return message.channel.send('please mention a user. or provide their id.');
         if (!member) return message.channel.send('they are not in the server or they dont exist.');
