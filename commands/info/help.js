@@ -72,7 +72,7 @@ module.exports = {
             return;
         }
         else {
-            message.channel.send(`${args} help list doesn't exist, dumb dumb`);
+            message.channel.send(`"${args}" help list doesn't exist, dumb dumb`);
         }
     }
 }
