@@ -14,6 +14,7 @@ module.exports = {
         if (!killMember) return message.reply("who r u going to kill. tag them or i can't kill them.");
         if (killMember.id === '296627878752419850') return message.channel.send("nope, he's too overpowered af i could get killed instead lmao");
         if (killMember.id === '694178512843702362') return message.channel.send("no thanks.");
+        if (killMember.id === message.author.id) return message.channel.send("you want to kill yourself? ok youre dead.")
 
         let killz = randomInArray(kill)
         let killss = killz.replace(/\$mention/g, `${killMember.username}`).replace(/\$author/g, `${message.author.username}`).replace(/"/g, ``);
