@@ -13,7 +13,7 @@ module.exports = {
         let subreddit = randomInArray(subreddits)
         let img = await api(subreddit)
 
-        let msg = await message.channel.send("lol wait ok");
+        let msg = await message.channel.send("fetching memes..");
         await sleep(1300)
         const memeEmbed = new MessageEmbed()
             .setTitle(`r/${subreddit}`)
