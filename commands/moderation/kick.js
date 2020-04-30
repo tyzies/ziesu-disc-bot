@@ -10,7 +10,7 @@ module.exports={
         if(!args[0])return message.channel.send(`who d'ya wanna kick?`)
         let User = message.guild.members.cache.get(args[0]) || message.mentions.members.first();
         if(!User)return message.channel.send(`that user is not in the server dum dum`)
-        if(User.permissions.has("ADMINISTRATOR", "BAN_MEMBERS")) return message.channel.send("cant kick this user. they're godly.")
+        if(User.permissions.has("ADMINISTRATOR", "KICK_MEMBERS")) return message.channel.send("cant kick this user. they're godly.")
         let Reason = message.content.split(`!kick ${User.id} `)
         if(!args[1])return message.channel.send(`why do you wanna kick this butthead? tell me. (reason required.)`)
         if(!Reason) return message.channel.send(`why do you wanna kick this butthead? tell me. (reason required.)`)
