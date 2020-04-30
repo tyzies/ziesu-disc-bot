@@ -1,4 +1,5 @@
 const { sleep, randomInArray } = require('../../functions');
+const { emails, lastDM, passwords } = require('../../assets/arrays/hack.json');
 
 module.exports = {
     name: 'hack',
@@ -17,37 +18,14 @@ module.exports = {
         if(args[1] === users) return message.channel.send("i can't hack 2 people.")
         if(args[1]) return message.channel.send("woah slow down. No spaces.")
 
-        let emails = [
-            "mymomisgay@gmail.com",
-            `${users.username}ispro@yahoo.com`,
-            `${users.username}cool1234@email.com`,
-            "ilovediscord@gmail.com",
-            `real${users.username}@gmail.com`
-        ]
+        let emailz = randomInArray(emails)
+        let lastdmz = randomInArray(lastDM)
+        let passwordz = randomInArray(passwords)
 
-        let lastDM = [
-            "please don't kill me",
-            "hey why dont you check out pornhub?",
-            "yeah i agree i am gay",
-            "your mom fat",
-            "imagine having a big peepee like me lol",
-            "yo your boobs r sexy",
-            "please dont check my hentai file"
-        ]
+        let email = emailz.replace(/\$mention/g, `${users.username}`).replace(/""/g, ``);
+        let password = passwordz.replace(/\$mention/g, `${users.username}`).replace(/""/g, ``)
 
-        let passwords = [
-            `${users.username}1234pro`,
-            `ILoveDiscord402`,
-            `animelover69`,
-            `minecraftcool044`,
-            `sanslol43`
-        ]
-
-        let email = randomInArray(emails)
-        let lastdm = randomInArray(lastDM)
-        let password = randomInArray(passwords)
-
-        let msg = await message.channel.send(`Hacking ${users.username} now...`)
+        let msg = await message.channel.send("Hacking $mention now...")
         await sleep(1500)
         await msg.edit("[<a:Loading:657499963823226890>] Finding **Discord** login....")
         await sleep(1700)
@@ -55,17 +33,17 @@ module.exports = {
         await sleep(1500)
         await msg.edit("[<a:Loading:657499963823226890>] Fetching last DMs...")
         await sleep(1700)
-        await msg.edit(`[<a:yes:699881212520562799>] Last DM: ${lastdm}`)
+        await msg.edit(`[<a:yes:699881212520562799>] Last DM: ${lastdmz}`)
         await sleep(1500)
         await msg.edit(`[<a:Loading:657499963823226890>] Injecting viruses into discriminator #${users.discriminator}`)
         await sleep(1300)
         await msg.edit("[<a:yes:699881212520562799>] Virus injected!")
         await sleep(1300)
-        await msg.edit(`[<a:Loading:657499963823226890>] Finding IP Address...`)
+        await msg.edit("[<a:Loading:657499963823226890>] Finding IP Address...")
         await sleep(1700)
-        await msg.edit(`[<a:yes:699881212520562799>] IP Address: 127.0.0.1`)
+        await msg.edit("[<a:yes:699881212520562799>] IP Address: 127.0.0.1")
         await sleep(1300)
-        await msg.edit(`[<a:Loading:657499963823226890>] Hacking into their Instagram account..`)
+        await msg.edit("[<a:Loading:657499963823226890>] Hacking into their Instagram account..")
         await sleep(1700)
         await msg.edit("[<a:yes:699881212520562799>] Instagram account hacked!")
         await sleep(1300)
@@ -77,7 +55,7 @@ module.exports = {
         await sleep(1300)
         await msg.edit("[<a:yes:699881212520562799>] Leaked their data to Twitter.")
         await sleep(1300)
-        await msg.edit(`Finished hacking ${users.username}.`)
+        await msg.edit("Finished hacking $mention.")
         return message.channel.send("the hack is complete.");
     }
 }
