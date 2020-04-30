@@ -1,4 +1,4 @@
-const { sleep } = require('../../functions');
+const { sleep, randomInArray } = require('../../functions');
 
 module.exports = {
     name: 'hack',
@@ -41,9 +41,9 @@ module.exports = {
             `sanslol43`
         ]
 
-        let email = emails[Math.floor(Math.random() * emails.length)];
-        let lastdm = lastDM[Math.floor(Math.random() * lastDM.length)];
-        let password = passwords[Math.floor(Math.random() * passwords.length)];
+        let email = randomInArray(email)
+        let lastdm = randomInArray(lastDM)
+        let password = randomInArray(passwords)
 
         let msg = await message.channel.send(`Hacking ${users.username} now...`)
         await sleep(1500)
@@ -55,7 +55,7 @@ module.exports = {
         await sleep(1700)
         await msg.edit(`[<a:yes:699881212520562799>] Last DM: ${lastdm}`)
         await sleep(1500)
-        await msg.edit(`[<a:Loading:657499963823226890>] Injecting viruses into discriminator #${users.username}`)
+        await msg.edit(`[<a:Loading:657499963823226890>] Injecting viruses into discriminator #${users.discriminator}`)
         await sleep(1300)
         await msg.edit("[<a:yes:699881212520562799>] Virus injected!")
         await sleep(1300)
