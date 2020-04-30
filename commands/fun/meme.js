@@ -1,6 +1,6 @@
 const { MessageEmbed } = require('discord.js');
 const api = require('imageapi.js');
-const { randomInArray } = require('../../functions');
+const { randomInArray, sleep } = require('../../functions');
 const { subreddits } = require('../../assets/arrays/subreddits.json');
 
 module.exports = {
@@ -13,16 +13,14 @@ module.exports = {
         let subreddit = randomInArray(subreddits)
         let img = await api(subreddit)
 
-        message.channel.send("lol wait ok").then(msg => {
-
-            const memeEmbed = new MessageEmbed()
-                .setTitle(`r/${subreddit}`)
-                .setURL(`https://reddit.com/r/${subreddit}`)
-                .setColor("RANDOM")
-                .setImage(img)
-
-            msg.edit(memeEmbed)
-        })
+        let msg = await message.channel.send("lol wait ok");
+        await sleep(1300)
+        const memeEmbed = new MessageEmbed()
+            .setTitle(`r/${subreddit}`)
+            .setURL(`https://reddit.com/r/${subreddit}`)
+            .setColor("RANDOM")
+            .setImage(img)
+        message.channel.send(memeEmbed);
 
     }
 }
