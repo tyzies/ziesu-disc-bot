@@ -1,7 +1,7 @@
 const { MessageEmbed } = require('discord.js');
 const api = require('imageapi.js');
 const { randomInArray } = require('../../functions');
-const { subreddits } = require('../../assets//subreddits.json');
+const { subreddits } = require('../../assets/arrays/subreddits.json');
 
 module.exports = {
     name: "meme",
