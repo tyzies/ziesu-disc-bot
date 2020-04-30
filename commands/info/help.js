@@ -32,7 +32,7 @@ module.exports = {
         if(args[0] === 'info' || args[0] === 'i'){
             let iEmbed = new MessageEmbed()
             .setTitle('<a:BlobThink:657601443511140353>   Info Commands')
-            .setDescription("``help``, ``ping``, ``avatar``, ``invite``, ``serverinfo``, ``userinfo``, ``fortnite``, ``uptime``, ``corona``, ``render``, ``version``, ``anime``")
+            .setDescription("``help``, ``ping``, ``avatar``, ``invite``, ``serverinfo``, ``userinfo``, ``fortnite``, ``uptime``, ``corona``, ``render``, ``version``, ``anime``, ``suggestion``")
             .setColor("RANDOM")
             .setFooter('made by tyzies#9020')
             message.channel.send(iEmbed);
@@ -47,15 +47,7 @@ module.exports = {
             message.channel.send(tEmbed);
             return;
         }
-        if (args[0] === 'misc'){
-            let miscEmbed = new MessageEmbed()
-            .setTitle('<a:BlurpKek:657601256000323585>   Miscellaneous Commands')
-            .setDescription("``suggestion``")
-            .setColor("RANDOM")
-            .setFooter('made by tyzies#9020')
-            message.channel.send(miscEmbed)
-            return;
-        }
+        
         else if(!args[0]) {
             let hEmbed = new MessageEmbed()
             .setAuthor(bot.user.username, bot.user.displayAvatarURL())
@@ -65,7 +57,6 @@ module.exports = {
             .addField("<a:siren:657601372195389461>   Moderation", `\`${prefix}help moderation\``, true)
             .addField("<a:BlobThink:657601443511140353>   Info", `\`${prefix}help info\``, true)
             .addField("<a:owoO:657498056815673344><a:owoW:657498068882685952><a:owoO:657498056815673344>   Text", `\`${prefix}help text\``, true)
-            .addField("<a:BlurpKek:657601256000323585>   Miscellaneous", `\`${prefix}help misc\``, true)
             .setFooter("Bugs? Contact tyzies#9020 | Command Display inspired by Dank Memer")
             .setColor("0x00b9fc")
             message.channel.send(hEmbed);
