@@ -1,6 +1,7 @@
-const { MessageEmbed } = require('discord.js')
+const { MessageEmbed } = require('discord.js');
 const api = require('imageapi.js');
-const { sleep } = require('../../functions')
+const { randomInArray } = require('../../functions');
+const { subreddits } = require('../../assets//subreddits.json');
 
 module.exports = {
     name: "meme",
@@ -8,27 +9,20 @@ module.exports = {
     category: "fun",
     aliases: ["dankmeme", "memes", "dankmemek"],
 
-    run: async (bot, message, args) =>{
-        let subreddits = [
-            "comedyheaven",
-            "dank",
-            "meme",
-            "memes"
-        ];
-
-        let subreddit = subreddits[Math.floor(Math.random() * subreddits.length)]
+    run: async (bot, message, args) => {
+        let subreddit = randomInArray(subreddits)
         let img = await api(subreddit)
 
-        let msg = await message.channel.send("fetching memes..")
-        await sleep(2000)
+        message.channel.send("lol wait ok").then(msg => {
 
-        const memeEmbed = new MessageEmbed()
-        .setTitle(`r/${subreddit}`)
-        .setURL(`https://reddit.com/r/${subreddit}`)
-        .setColor("RANDOM")
-        .setImage(img)
+            const memeEmbed = new MessageEmbed()
+                .setTitle(`r/${subreddit}`)
+                .setURL(`https://reddit.com/r/${subreddit}`)
+                .setColor("RANDOM")
+                .setImage(img)
 
-        msg.edit(memeEmbed);
-        
+            msg.edit(memeEmbed)
+        })
+
     }
 }
