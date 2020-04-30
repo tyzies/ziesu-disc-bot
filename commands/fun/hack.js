@@ -41,7 +41,7 @@ module.exports = {
             `sanslol43`
         ]
 
-        let email = randomInArray(email)
+        let email = randomInArray(emails)
         let lastdm = randomInArray(lastDM)
         let password = randomInArray(passwords)
 
