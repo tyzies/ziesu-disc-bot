@@ -20,7 +20,7 @@ module.exports = {
             .setURL(`https://reddit.com/r/${subreddit}`)
             .setColor("RANDOM")
             .setImage(img)
-        message.channel.send(memeEmbed);
+        msg.edit(memeEmbed);
 
     }
 }
