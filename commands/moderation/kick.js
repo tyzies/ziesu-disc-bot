@@ -1,4 +1,4 @@
-const {MessageEmbed} = require('discord.js')
+ const {MessageEmbed} = require('discord.js')
 module.exports={
     name: "kick",
     description: "Kick a specified user from the server",
@@ -16,7 +16,7 @@ module.exports={
         if(!Reason) return message.channel.send(`why do you wanna kick this butthead? tell me. (reason required.)`)
         if(!message.member.permissions.has("KICK_MEMBERS"))return message.channel.send(`u don't have kick perms, kid. get outta here`)
         if(User.id === '296627878752419850') return message.channel.send('cannot kick him. hes my owner afterall')
-        message.guild.members.kick(User)
+        message.guild.members.kick(User, { reason: `${Reason}` })
         
         message.channel.send(`<:BlobSaluteBan:657602844664397844> kicked ${bot.users.cache.get(User.id).username}. adios! <a:PepeHello:657601419016405022>`);
     }
