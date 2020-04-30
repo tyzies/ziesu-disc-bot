@@ -41,7 +41,7 @@ module.exports = {
         if (args[0] === 'text' || args[0] === 'txt'){
             let tEmbed = new MessageEmbed()
             .setTitle('<a:owoO:657498056815673344><a:owoW:657498068882685952><a:owoO:657498056815673344>   Text Commands')
-            .setDescription("``embed``, ``orangetext``, ``yellowtext``, ``greentext``, ``bluetext``")
+            .setDescription("``embed``, ``orangetext``, ``yellowtext``, ``greentext``, ``bluetext``, ``clap``")
             .setColor("RANDOM")
             .setFooter('made by tyzies#9020')
             message.channel.send(tEmbed);
