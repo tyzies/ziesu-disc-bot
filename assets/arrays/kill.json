@@ -1,0 +1,15 @@
+{
+    "kill": [
+        "**$mention** died from falling on a building, so sad.",
+        "a car passed and accidentally crashed into **$mention**",
+        "theres snakes in **$mention**'s house and one of the snakes bite **$mention**",
+        "**$mention** tried to swim in lava.",
+        "**$mention** had a rough life and decided to end it. :(",
+        "**$mention** got sliced by Tanjirou's water breathing technique.",
+        "Zenitsu slept and sliced **$mention** accidentally. whoopsies.",
+        "Inosuke's beast breathing is too overpowered and killed **$mention.**",
+        "**$mention** died from falling.",
+        "**$mention** is killed by $author.",
+        "**$mention** fell into the void."
+    ]
+}
