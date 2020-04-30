@@ -25,7 +25,7 @@ module.exports = {
         let email = emailz.replace(/\$mention/g, `${users.username}`).replace(/""/g, ``);
         let password = passwordz.replace(/\$mention/g, `${users.username}`).replace(/""/g, ``)
 
-        let msg = await message.channel.send("Hacking $mention now...")
+        let msg = await message.channel.send(`Hacking ${users.username} now...`)
         await sleep(1500)
         await msg.edit("[<a:Loading:657499963823226890>] Finding **Discord** login....")
         await sleep(1700)
@@ -55,7 +55,7 @@ module.exports = {
         await sleep(1300)
         await msg.edit("[<a:yes:699881212520562799>] Leaked their data to Twitter.")
         await sleep(1300)
-        await msg.edit("Finished hacking $mention.")
+        await msg.edit(`Finished hacking ${users.username}.`)
         return message.channel.send("the hack is complete.");
     }
 }
