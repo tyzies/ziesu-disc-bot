@@ -24,6 +24,6 @@ module.exports = {
         // so use index 1.
         const id = matches[1];
     
-        return client.users.cache.get(id);
+        return bot.users.cache.get(id);
     }
 }
