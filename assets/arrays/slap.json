@@ -1,0 +1,21 @@
+{
+    "slapURL": [
+        "https://media.giphy.com/media/vxvNnIYFcYqEE/giphy.gif",
+        "https://media.giphy.com/media/lX03hULhgCYQ8/giphy.gif",
+        "https://media.giphy.com/media/iIPI1tpT9HcUE/giphy.gif",
+        "https://media.giphy.com/media/s5zXKfeXaa6ZO/giphy.gif",
+        "https://media.giphy.com/media/IYcXTDme1ZPMI/giphy.gif",
+        "https://media.giphy.com/media/RrLbvyvatbi36/giphy.gif",
+        "https://media.giphy.com/media/l2YOqzhYD066fAd56/giphy.gif",
+        "https://media.giphy.com/media/10L38gtN2vVpgk/giphy.gif",
+        "https://media.giphy.com/media/Hj9ixvpSfqcQo/giphy.gif",
+        "https://media.giphy.com/media/FG9qhaCAPJMTC/giphy.gif"
+    ],
+    "slapMessage": [
+        "$mention didn't slap like. So instead, $mention gets slapped.",
+        "$author slapped $mention.. Ouch!",
+        "$author slaps $mention so hard, their cheeks are red.",
+        "$mention got slapped hard, they flung out of earth.",
+        "$author dodged $mention's slap. so $author slapped $mention instead."
+    ]
+}
