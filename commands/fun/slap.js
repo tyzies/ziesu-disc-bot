@@ -8,17 +8,18 @@ module.exports = {
     usage: '<command> @user',
     timeout: 5000,
 
-    run: async (bot, message, args) =>{
+    run: async (bot, message, args) => {
         let zies = message.channel;
 
         let user = message.mentions.users.first();
-        if(!user) return zies.send("who do you want to slap? i'll do the job.");
+        if (!user) return zies.send("who do you want to slap? i'll do the job.");
+        if (message.author.id === user.id) return zies.send("sorry but you can't slap yourself.")
 
         let slapgif = randomInArray(slapURL)
         let slapmsg = randomInArray(slapMessage)
         let slapMsg = slapmsg.replace(/\$mention/g, `${user.username}`)
-        .replace(/\$author/g, `${message.author.username}`)
-        .replace(/\""/g, ``)
+            .replace(/\$author/g, `${message.author.username}`)
+            .replace(/\""/g, ``)
 
         let embed = {
             color: "RANDOM",
