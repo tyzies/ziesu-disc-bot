@@ -1,1 +1,1 @@
-![ziesu pfp](ziesu pfp.jpg)
+![ziesu pfp](https://ibb.co/FYP7bkj)
