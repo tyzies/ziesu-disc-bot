@@ -1,1 +1,1 @@
-![ziesu pfp](https://imgur.com/dptK22I)
+![ziesu pfp](ziesu pfp.jpg)
