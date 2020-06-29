@@ -1,1 +1,1 @@
-<img src="https://images.app.goo.gl/9fjRuMw8zrobJuUe7" alt="ziesu pfp lol">
+<img src="https://imgur.com/dptK22I" alt="ziesu pfp lol">
