@@ -18,10 +18,7 @@ ziesu is a discord bot made for fun and for everyone!
 <br>
 many features including moderation, fun, <strong>economy</strong> and much more!
 <br>
-This is an old repository of <strong>ziesu</strong>.
-<br>
-ziesu has a lot more commands than shown here, don't worry lol
-<br>
+<strong>REMINDER: THIS IS AN <em>OLD REPOSITORY</em> OF ZIESU, ZIESU DOESN'T USE THIS PROJECT!</strong>
 <strong>Support Email</strong> - ziesubot@gmail.com
 <h2>License</h2>
 the <strong>ziesu discord bot project</strong> is licensed under <strong>GNU AGPLv3 License</strong>
