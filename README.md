@@ -36,6 +36,5 @@ pls no, don't self host the bot. We don't recommend to do this and it's not allo
 <ul>
   <li><strong>tyzies</strong> - <em>"yes"</em> | Original Creator and Developer | <a href="https://github.com/tyzies">GitHub Profile</a></li>
 </ul>
-<br>
 <h2>Credits</h2>
 <li><strong>Salvage_Dev</strong> - <em>"i've always liked making a cool entrance"</em> | Base Project, credits to him! | <a href="https://github.com/Milo123459">GitHub Profile</a></li>
