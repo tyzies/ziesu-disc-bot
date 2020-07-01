@@ -1,9 +1,9 @@
 <h2>ziesu Discord Bot - a bot made for fun, for everyone.</h2>
-<style>
+<styles>
   div {
     margin: 0 auto;
   }
-  </style>
+  </styles>
 <div>
 <a href="https://top.gg/bot/694178512843702362" >
   <img src="https://top.gg/api/widget/status/694178512843702362.svg" alt="ziesu" />
