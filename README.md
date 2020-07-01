@@ -1,5 +1,4 @@
 <h2>ziesu Discord Bot - a bot made for fun, for everyone.</h2>
-<div style="text-align: center">
 <a href="https://top.gg/bot/694178512843702362" >
   <img src="https://top.gg/api/widget/status/694178512843702362.svg" alt="ziesu" />
 </a>
@@ -9,7 +8,6 @@
 <a href="https://top.gg/bot/694178512843702362" >
   <img src="https://top.gg/api/widget/lib/694178512843702362.svg" alt="ziesu" />
 </a>
-  </div>
 <br>
 ziesu's Website - https://ziesu.tk/
 <br>
