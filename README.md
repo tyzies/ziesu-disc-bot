@@ -13,6 +13,11 @@ ziesu's Website - https://ziesu.tk/
 <br>
 ziesu's Invite Link - https://ziesu.tk/invite
 <br>
+<h2>About</h2>
+ziesu is a discord bot made for fun and for everyone!
+<br>
+many features including moderation, fun, <strong>economy</strong> and much more!
+<br>
 This is an old repository of <strong>ziesu</strong>.
 <br>
 ziesu has a lot more commands than shown here, don't worry lol
@@ -29,4 +34,3 @@ pls no, don't self host the bot. We don't recommend to do this and it's not allo
 <ul>
   <li><strong>tyzies</strong> - <em>"yes"</em> | Original Creator and Developer
 </ul>
-<br>
