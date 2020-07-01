@@ -21,6 +21,8 @@ many features including moderation, fun, <strong>economy</strong> and much more!
 This is an old repository of <strong>ziesu</strong>.
 <br>
 ziesu has a lot more commands than shown here, don't worry lol
+<br>
+<strong>Support Email</strong> - ziesubot@gmail.com
 <h2>License</h2>
 the <strong>ziesu discord bot project</strong> is licensed under <strong>GNU AGPLv3 License</strong>
 <br>
