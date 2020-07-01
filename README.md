@@ -16,7 +16,6 @@ ziesu's Invite Link - https://ziesu.tk/invite
 This is an old repository of <strong>ziesu</strong>.
 <br>
 ziesu has a lot more commands than shown here, don't worry lol
-<br>
 <h3>Self-hosting</h3>
 <br>
 pls no, don't self host the bot. We don't recommend to do this and it's not allowed according to Discord's Terms of Service.
