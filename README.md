@@ -6,7 +6,7 @@
   <img src="https://top.gg/api/widget/servers/694178512843702362.svg" alt="ziesu" />
 </a>
 <a href="https://top.gg/bot/694178512843702362" >
-  <img src="https://top.gg/api/widget/lib/694178512843702362.svg" alt="ziesu" />
+  <img src="https://top.gg/api/widget/upvotes/694178512843702362.svg" alt="ziesu" />
 </a>
 <br>
 ziesu's Website - https://ziesu.tk/
