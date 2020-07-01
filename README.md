@@ -14,7 +14,9 @@ ziesu's Website - https://ziesu.tk/
 ziesu's Invite Link - https://ziesu.tk/invite
 <br>
 This is an old repository of <strong>ziesu</strong>.
+ziesu has a lot more commands than shown here, don't worry lol
 <h2>Developer</h2>
 <ul>
   <li><strong>tyzies</strong> - <em>"yes"</em> | Original Creator and Developer
-</ul
+</ul>
+© Copyright - ziesuDiscordBot 2020
