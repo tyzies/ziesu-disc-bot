@@ -28,7 +28,7 @@ pls no, don't self host the bot. We don't recommend to do this and it's not allo
 <br>
 <h2>Developer</h2>
 <ul>
-  <li><strong>tyzies</strong> - <em>"yes"</em> | Original Creator and Developer | <a href="https://github.com/tyzies">GitHub Profile</a></li>
+  <li><strong>snos</strong> - <em>"that isn't very cash money of you, kid."</em> | Original Creator and Developer | <a href="https://github.com/tyzies">GitHub Profile</a></li>
 </ul>
 <h2>Credits</h2>
 <ul>
