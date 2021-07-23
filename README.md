@@ -9,9 +9,9 @@
   <img src="https://top.gg/api/widget/upvotes/694178512843702362.svg" alt="ziesu" />
 </a>
 <br>
-ziesu's Website - https://ziesu.tk/
+ziesu's Website - https://ziesu.netlify.app/
 <br>
-ziesu's Invite Link - https://ziesu.tk/invite
+ziesu's Invite Link - https://ziesu.netlify.app/invite
 <br>
 <h2>About</h2>
 ziesu is a discord bot made for fun and for everyone!
