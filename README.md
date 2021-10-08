@@ -18,7 +18,7 @@ ziesu is a discord bot made for fun and for everyone!
 <br>
 many features including moderation, fun, <strong>economy</strong> and much more!
 <br>
-<strong>REMINDER: THIS IS AN <em>OLD REPOSITORY</em> OF ZIESU, ZIESU DOESN'T USE THIS PROJECT ANYMORE!</strong>
+<strong>REMINDER: THIS IS AN <em>OLD REPOSITORY</em> OF ZIESU, ZIESU DOES NOT USE THIS PROJECT ANYMORE!</strong>
 <br>
 <strong>Support Email</strong> - ziesubot@gmail.com
 <br>
